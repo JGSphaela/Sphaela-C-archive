@@ -2,7 +2,7 @@
 
 enum month {Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec};
 
-enum month select(void)
+enum month selection(void) /* name changed to selection */
 {
     int tmp;
     do {
@@ -18,7 +18,7 @@ int main(void)
 {
     enum month selected;
 
-    switch (selected = select()) {
+    switch (selected = selection()) {
         case Jan:
         case Mar:
         case May:
@@ -40,3 +40,6 @@ int main(void)
 /* Output: */
 /* Please enter month as number:2 */
 /* There are 28 days in this month! */
+
+/* I didn't encountered error using the name select(which has already been defined in stdio.h) in my environment */
+/* But changed it to other name to avoid compiler error */
