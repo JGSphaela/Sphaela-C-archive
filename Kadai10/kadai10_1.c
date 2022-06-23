@@ -17,7 +17,7 @@ void null_string(char s[], int n)
 {
     int length = str_length(s);
 
-    for (int i = n; i < length - 1; i++) {
+    for (int i = n; i < length; i++) {
         s[i] = 0;
     }
 
