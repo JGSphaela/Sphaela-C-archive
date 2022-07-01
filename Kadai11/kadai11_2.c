@@ -2,17 +2,15 @@
 
 void sum_ave(int *arr, int *sum, double *avg)
 {
-    int i = 0;
-
     *sum = 0;
     *avg = 0;
 
-    while (arr[i]) {
+    /* using while is bad cuz it will exit in case of the value of the array is 0 */
+    for (char i = 0; i < 5; i++) {
         *sum += arr[i];
-        i++;
     }
 
-    *avg = (double) *sum / i;
+    *avg = (double) *sum / 5;
 
 }
 
