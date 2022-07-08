@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void del_alpha(char *str)
 {
@@ -18,7 +19,7 @@ void del_alpha(char *str)
 
 int main(void)
 {
-    char *str;
+    char *str = (char *)malloc(40*sizeof(char));
 
     printf("Enter string:");
     scanf("%s", str);
@@ -26,6 +27,8 @@ int main(void)
     del_alpha(str);
 
     printf("Output:%s\n", str);
+
+    free(str);
 
     return(0);
 }
