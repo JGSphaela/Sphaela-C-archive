@@ -19,7 +19,7 @@ void del_alpha(char *str)
 
 int main(void)
 {
-    char *str = (char *)malloc(40*sizeof(char));
+    char *str;
 
     printf("Enter string:");
     scanf("%s", str);
@@ -28,7 +28,7 @@ int main(void)
 
     printf("Output:%s\n", str);
 
-    free(str);
+    /* free(str); */
 
     return(0);
 }
